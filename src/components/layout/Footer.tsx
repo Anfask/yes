@@ -13,7 +13,7 @@ const Footer = () => {
     { href: "/gallery", label: "Gallery" },
         { href: "/joinUs", label: "Join Us" },
     { href: "/alumni", label: "Alumni" },
-        { href: "/gpt", label: "Yes GPT" },
+        { href: "/gpp", label: "Yes GPP" },
   ];
 
   return (
