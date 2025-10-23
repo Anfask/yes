@@ -1,0 +1,25 @@
+.wrapper_section {
+  padding: 0px 154px;
+
+  /* Large screens (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    padding: 40px 80px;
+
+}
+
+  /* Medium screens (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    padding: 40px 60px;
+
+}
+
+  /* Tablets (768px - 991px) */
+  @media (min-width: 769px) and (max-width: 991px) {
+    padding: 60px 40px;
+  }
+
+  /* Mobile devices (up to 767px) */
+  @media (max-width: 768px) {
+    padding: 48px 24px;
+  }
+}

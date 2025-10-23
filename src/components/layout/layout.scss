@@ -1,0 +1,252 @@
+// FounderMessage.tsx--------------------------------------------------->
+// .found_message_section {
+//   color: white;
+//   // margin: 80px;
+//   margin-top: 80px;
+//   padding-left: 76px;
+//   padding-right: 76px;
+//   background-color: #a5874c;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 30px;
+//   gap: 100px;
+
+//   .founder_details {
+
+//     bottom: 92px;
+
+//     .founder_img {
+//       width: 100%;
+//       margin-bottom: 25px;
+//       img {
+//         width: 100%;
+//         object-fit: contain;
+//       }
+//     }
+
+//     .founder_details_text {
+//       text-wrap: nowrap;
+
+//       .founder_name {
+//         font-weight: 400;
+//         font-size: 22px;
+//         line-height: 110%;
+//         letter-spacing: 0%;
+//         text-align: justify;
+//       }
+//       .position {
+//         font-weight: 400;
+//         font-size: 18px;
+//         line-height: 110%;
+//         letter-spacing: 0%;
+//         text-align: justify;
+//       }
+//     }
+//   }
+
+//   .message_box {
+//     h2 {
+//       // font-family: Funnel Display;
+//       font-weight: 500;
+//       font-size: 36px;
+//       line-height: 100%;
+//       letter-spacing: 0%;
+
+//       margin-bottom: 30px;
+//     }
+
+//     div {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 22px;
+//       p {
+//         //   font-family: Gilroy-Regular;
+//         font-weight: 400;
+//         font-style: ☞;
+//         font-size: 22px;
+//         line-height: 110%;
+//         letter-spacing: 0%;
+//         text-align: justify;
+//       }
+//     }
+//   }
+
+//   position: relative;
+//   .qoutes_icon {
+//     position: absolute;
+//     bottom: 0;
+//     right: 113px;
+//   }
+// }
+.found_message_section {
+  color: white;
+  // margin: 80px;
+  margin-top: 80px;
+  padding: 80px;
+  // padding-left: 76px;
+  // padding-right: 76px;
+  background-color: #a5874c;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  gap: 100px;
+  position: relative;
+  @media (min-width: 769px) and (max-width: 991px) {
+    padding: 80px 0px 80px 20px;
+    gap: 50px;
+  }
+  .qoutes_icon {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+  }
+
+  .founder_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .founder_details_text {
+    text-align: center;
+    .founder_name {
+      color: var(--heading-color);
+      font-weight: 600;
+      text-wrap: nowrap;
+    }
+
+    .position {
+      color: var(--heading-color);
+      font-weight: 100;
+    }
+  }
+
+  .message_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+      color: var(--heading-color);
+    }
+    p {
+      color: var(--heading-color);
+      font-weight: 100;
+    }
+  }
+}
+
+/////FounderMessage.tsx mobile/////
+@media (max-width: 768px) {
+  .found_message_section {
+    display: none;
+  }
+}
+.found_message_section_mobile {
+  background: var(--body-bg-color);
+  padding: 32px 26px 38px 26px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+
+  .qoutes_icon {
+    position: absolute;
+    bottom: -3px;
+    right: 4%;
+  }
+
+  .found_img_container h5 {
+    color: var(--heading-color);
+    padding-top: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: justify;
+  }
+
+  .found_img_container p {
+    color: var(--heading-color);
+    font-weight: 0;
+    // font-weight: 400;
+    // font-size: 15px;
+    // letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .founder_message_area h2 {
+    padding-bottom: 6px;
+    color: var(--heading-color);
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .founder_message_area p {
+    color: var(--heading-color);
+    text-align: justify;
+  }
+}
+
+// FounderMessage.tsx--------------------------------------------------->
+
+//ExploreTeam.tsx---------------------------------------------------->
+.explore_team_container {
+  margin-top: 60px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .explore_team_contents_wrapper {
+    // height: 468px;
+    display: flex;
+    gap: 81px;
+    // align-items: center;
+    padding: 48px 55px;
+
+    p {
+      text-align: justify;
+      font-size: 20px;
+    }
+  }
+
+  .explore_team_img_wrapper {
+    position: relative;
+
+    .explore_btn {
+      position: absolute;
+    bottom: 2%;
+    right:0px;
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        border: none;
+        background-color: var(--primary-color);
+        border-bottom-right-radius: 30px;
+        padding: 20px 30px;
+
+          /*  Glassy indigo background */
+      background: linear-gradient(
+        135deg,
+        rgba(42, 27, 99, 0.7),
+        rgba(42, 27, 99, 0.4)
+      );
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+ box-shadow: 0 4px 12px rgba(42, 27, 99, 0.4);
+        p {
+          color: var(--heading-color);
+        }
+      }
+    }
+  }
+  .explore_team_img_wrapper img {
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+  }
+}

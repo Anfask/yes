@@ -1,0 +1,176 @@
+
+
+.alumni_banner_section {
+  position: relative;
+  height: calc(100dvh - 78px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+
+  .alumni_banner_contents {
+    position: absolute;
+    inset: 0; /* covers full area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+    z-index: 2;
+
+      button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--YES-Brown, #a5874c);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+p {
+    font-weight: 400;
+        color: #ffffff;
+}
+  }
+
+    h1 {
+        line-height: 40px;
+    }
+
+    span {
+      color: var(--YES-Blue, #2a1b63);
+      font-weight: bolder;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0%;
+      text-align: justify;
+    }
+  }
+
+}
+
+
+// Alumni Grid Section
+.alumni_grid_section {
+  padding: 80px 0;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
+  }
+
+  .alumni_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  .alumni_card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .alumni_image {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f0f0f0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+      .placeholder_image {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #d0d0d0 0%, #e0e0e0 100%);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .alumni_info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--primary-color);
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
+
+      .position {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        color: #000000;
+
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+
+      .department {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        color: #666;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Optional: Add wrapper section padding if needed
+.wrapper_section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}

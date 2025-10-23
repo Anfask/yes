@@ -1,0 +1,102 @@
+/* 1. @use (and @forward) FIRST */
+@use "../styles/about" as about;
+@use "../styles/academic" as academic;
+@use "../styles/institutions" as institutions; 
+@use "../styles/utilities" as utilities;
+@use "../styles/variables" as variables;
+@use "../styles/states" as states;
+@use "../styles/gallery" as gallery;
+@use "../styles/alumni" as alumni;
+
+/* 2. Old @import (if you still need them) */
+@use "../styles/Footer" as footer; // ideally also migrate to @use
+
+/* 3. Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 4. Fonts, variables, mixins, global CSS */
+// @font-face {
+//   font-family: "Gilroy-Medium";
+//   src: url("../assets/fonts/gilroy-bold/Gilroy-Medium.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Gilroy-Bold";
+//   src: url("../assets/fonts/gilroy-bold/Gilroy-Bold.ttf") format("truetype");
+//   font-weight: bold;
+//   font-style: bold;
+// }
+
+/* === Local Font Definitions === */
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../assets/fonts/gilroy-bold/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../assets/fonts/gilroy-bold/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+// // @import "../styles/utilities.scss";
+// @import "../styles/Footer.scss";
+// // @import "../styles/about.scss";
+// @use "../styles/about" as about;
+// @use "../styles/utilities" as utilities;
+
+// // @import "tailwindcss";
+
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+
+
+// @font-face {
+//   font-family: "Gilroy-Medium";
+//   src: url("../assets/fonts/gilroy-bold/Gilroy-Medium.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Gilroy-Bold";
+//   src: url("../assets/fonts/gilroy-bold/Gilroy-Bold.ttf") format("truetype");
+//   font-weight: bold;
+//   font-style: bold;
+// }
+
+// body {
+//   margin: 0;
+//   padding: 0;
+
+//   font-family: "Gilroy-Medium", sans-serif;
+//   background-color: #ffffff;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// ul,
+// p {
+//   margin: 0;
+// }

@@ -1,0 +1,442 @@
+.academic_banner_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* === Wavy Background === */
+  .waves {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+
+    .wave_line {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      path {
+        fill: #727272;
+        opacity: 0.2;
+      }
+    }
+
+    // .line1 { top: 0%; }
+    // .line2 { top: 2%; }
+    // .line3 { top: 4%; }
+    // .line4 { top: 6%; }
+    // .line5 { top: 8%; }
+
+        .line1 { top: 0%; }
+    .line2 { top: 4%; }
+    .line3 { top: 8%; }
+    .line4 { top: 12%; }
+    .line5 { top: 16%; }
+  }
+
+  /* === Text Content === */
+  .banner_content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 2rem;
+
+    h1 {
+        font-family: var(--font-funnel-display);
+      color:var(--paragraph-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      span {
+        color: #2a1b64; // YES INDIA purple tone
+      }
+    }
+
+    // h2 {
+    //   font-size: 2.2rem;
+    //   font-weight: 600;
+    //   color: #111;
+      
+    // }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  /* === Floating Icons === */
+  .floating_icon {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #201b5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    z-index: 20;
+    animation: float 4s ease-in-out infinite;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      stroke-width: 1.8;
+    }
+
+    &.icon_left {
+      left: 12%;
+      top: 40%;
+      animation-delay: 0s;
+    }
+
+    &.icon_top_right {
+      right: 20%;
+      top: 25%;
+      animation-delay: 0.5s;
+    }
+
+    &.icon_bottom_right {
+      right: 18%;
+      bottom: 18%;
+      animation-delay: 1s;
+    }
+
+    @media (max-width: 768px) {
+      width: 2.8rem;
+      height: 2.8rem;
+      svg {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+
+.academic_content_wrapper{
+      span{
+        color: var(--YES-Blue, #2A1B63);
+        font-weight: bolder;
+    }
+    p{
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: justify;
+    }
+
+    .grade_card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+
+  .grade_card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 12px;
+    overflow: hidden;
+    // background: #fff;
+    background: #FEE3C5;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .grade_header {
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      font-size: 18px;
+      padding: 14px 0;
+    }
+
+    .grade_section {
+      padding: 16px 12px;
+      font-size: 16px;
+      text-align: center;
+      border-top: 1px solid #00000066;
+
+      line-height: 22px;
+
+      &:nth-child(2) {
+        // background: #f9f9f9;
+        background: #FEE3C5;
+
+      }
+
+      &:nth-child(3) {
+        // background: #f5f5f5;
+        background: #FEE3C5;
+
+      }
+
+      &:nth-child(4) {
+        // background: #fafafa;
+        background: #FEE3C5;
+
+      }
+
+      &:nth-child(5) {
+        // background: #fff;
+        background: #FEE3C5;
+
+      }
+    }
+  }
+}
+
+}
+
+.school_target_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: #fff;
+  padding: 60px 40px;
+  border-radius: 16px;
+
+
+  // Left Text Section
+  .text_content {
+    flex: 0.45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #2a1b63;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #222;
+      line-height: 1.5;
+      max-width: 250px;
+    }
+  }
+
+  // Right Chart Section
+  .chart_container {
+    flex: 0.55;
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 60px 0px #2A1B6326;
+
+  }
+
+  // ===== Recharts Customization =====
+  .recharts-cartesian-axis-line {
+    display: none !important;
+  }
+
+  .recharts-cartesian-grid-vertical {
+    display: none !important;
+  }
+
+  .recharts-cartesian-grid-horizontal line {
+    stroke: #00000033 !important;
+    stroke-width: 1px !important;
+  }
+
+  .recharts-legend-item-text {
+    fill: #000000 !important;
+    color: #000000 !important;
+    font-size: 0.9rem !important;
+  }
+
+  .recharts-label-list text {
+    fill: #000000 !important;
+    font-weight: 500;
+    font-size: 12px !important;
+  }
+
+  .recharts-cartesian-axis-tick-value {
+    fill: #000000 !important;
+    font-size: 12px !important;
+  }
+
+  // Responsive Design
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 40px 30px;
+    text-align: center;
+    gap: 30px;
+
+    .text_content {
+      flex: unset;
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .chart_container {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
+
+.academic_focus_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 60px 40px;
+  background: #fff;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #2a1b63;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .focus_pills_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .focus_pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border: 2px solid #2a1b63;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2a1b63;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #2a1b63;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(42, 27, 99, 0.2);
+      transform: translateY(-2px);
+    }
+  }
+
+  // Responsive layout
+  @media (max-width: 768px) {
+    padding: 40px 24px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .focus_pills_wrapper {
+      gap: 14px;
+    }
+
+    .focus_pill {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 16px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .focus_pills_wrapper {
+      gap: 12px;
+    }
+
+    .focus_pill {
+      padding: 9px 18px;
+      font-size: 13px;
+    }
+  }
+}
+
+.memorable_moments_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+  h2 {
+    text-align: center;
+      font-size: 2.2rem;
+      color: #101010;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+         span {
+        color: #2a1b64; // YES INDIA purple tone
+      }
+    }
+
+    .bg-lines{
+      display: flex;
+      justify-content: center;
+    }
+}
+

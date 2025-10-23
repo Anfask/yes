@@ -1,0 +1,13 @@
+.logo_carousel_wrapper {
+  width: 100%;
+  padding: 2rem 0;
+  background: #fff;
+  overflow: hidden;
+
+  .logo_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
